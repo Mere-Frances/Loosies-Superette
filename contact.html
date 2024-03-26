@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/favicon-logo-small.png">
+    <link rel="stylesheet" href="./style.scss">
+    <link rel="stylesheet" href="./style.css">
+    <title>Loosies About Us</title>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav class="nav-container">
+        <div class="navbar">
+            <a class="navbar__logo-container" href="./index.html">
+                <div>
+                    <img class="navbar__logo" src="./images/logo.png" alt="Loosies nav logo image">
+                </div>
+            </a>
+            <div class="navbar__link-container" id="navigationItems">
+                <a class="navbar__link-item" href="./index.html">Home</a>
+                <a class="navbar__link-item" href="./about.html">About</a>
+                <a class="navbar__link-item" href="#">Menu</a>
+                <a class="navbar__link-item active" href="./contact.html">Contact</a>
+            </div>
+                        
+            <!-- Hamburger Icons -->
+            <div class="hamburger">
+                <span id="openHam">&#9776;</span>
+                <span id="closeHam">&#x2716;</span>
+            </div>
+        </div>
+    </nav>
+    <!-- NAV END -->
+
+    <!-- CONTACT US HEADER START -->
+<div class="contact-header">
+    <h2 class="contact-header__title">Contact Us</h2>
+    <div class="contact-details-container">
+        <div class="contact-details">
+            <h3 class="contact-details__subtitle">Email</h3>
+            <a href="mailto:greasyspoon@loosiessuperette.co.nz?&subject=ContactLoosiesSuperette"
+                class="contact-details__link">Greasyspoon@loosiessuperette.co.nz</a>
+            <h3 class="contact-details__subtitle">Address</h3>
+            <p class="contact-details__address">135 Cuba Street Te Aro Wellington</p>
+            <a href="https://www.instagram.com/loosies_superette?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                class="contact-details__social-link">
+                <i class="fa-brands fa-instagram contact-details__social-icon"></i>
+            </a>
+            <a href="https://www.facebook.com/loosiessuperette/" class="contact-details__social-link">
+                <i class="fa-brands fa-facebook contact-details__social-icon"></i>
+            </a>
+        </div>
+        <img src="./images/contactus.png" alt="neon contact us sign" class="contact-details-container__image">
+    </div>
+</div>
+<!-- CONTACT US HEADER END -->
+
+<!-- CONTACT FORM START -->
+<div class="contact-booking-form">
+    <h3 class="contact-booking-form__title">Booking Form</h3>
+    <div class="form-container">
+        <form id="booking-form" class="contact-booking-form__form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name" class="form-group__label">Name</label>
+                    <input class="input-field form-group__input" type="text" id="name" name="name"
+                        placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="people" class="form-group__label">Number of People</label>
+                    <input class="input-field form-group__input" type="number" id="people" name="people"
+                        placeholder="Number of people attending" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email" class="form-group__label">Email</label>
+                    <input class="input-field form-group__input" type="email" id="email" name="email"
+                        placeholder="Email" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="phone" class="form-group__label">Phone</label>
+                    <input class="input-field form-group__input" type="tel" id="phone" name="phone"
+                        placeholder="Phone number">
+                </div>
+                <div class="form-group">
+                    <label for="comments" class="form-group__label">Comments</label>
+                    <textarea class="input-field form-group__input" id="comments" name="comments"
+                        placeholder="Optional"></textarea>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="date" class="form-group__label">Date</label>
+                    <input class="input-field form-group__input" type="number" id="date" name="date"
+                        placeholder="day/month/year" required>
+                </div>
+                <div class="form-group">
+                    <label for="time" class="form-group__label">Time</label>
+                    <input class="input-field form-group__input" type="number" id="time" name="time"
+                        placeholder="--/--" required>
+                </div>
+            </div>
+
+            <button class="submit-button contact-booking-form__submit-button" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+<!-- CONTACT FORM END -->
+
+<div class="contact-access-container">
+    <div class="orb contact-pink-orb"></div>
+    <div class="orb contact-blue-orb"></div>
+    <div class="map-details">
+        <h3 class="map-details__title">Location</h3>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.7226516501914!2d174.77339057605488!3d-41.293140271311934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38afae08de6c21%3A0x10ca66ffe56f5556!2sLoosies%20Superette!5e0!3m2!1sen!2snz!4v1711007056025!5m2!1sen!2snz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <div class="opening-hours" id="openingHours">
+        <h3 class="opening-hours__title">Opening Hours</h3>
+        <div class="hours-details">
+            <p class="hours-details__item">Monday: Closed</p>
+            <p class="hours-details__item">Tuesday: Closed</p>
+            <p class="hours-details__item">Wednesday: 12pm - 12am</p>
+            <p class="hours-details__item">Thursday: 12pm - 12am</p>
+            <p class="hours-details__item">Friday: 12pm - 2am</p>
+            <p class="hours-details__item">Saturday: 12pm - 2am</p>
+            <p class="hours-details__item">Sunday: 12pm - 12am</p>
+        </div>
+    </div>
+</div>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <a class="footer__logo" href="./index.html">
+            <div>
+                <img src="./images/logo.png" alt="Loosies logo">
+            </div>
+        </a>
+        <div class="footer__links">
+            <div class="footer__content-column footer__content-column--social-media-icons">
+                <a class="footer__social-media-link" href="">Social Media</a>
+                <div class="footer__icons">
+                    <a class="footer__icons footer__icon--instagram"
+                        href="https://www.instagram.com/loosies_superette?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a class="footer__icons footer__icon--facebook" href="https://www.facebook.com/loosiessuperette/">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__content-column">
+                <a class="footer__link" href="#">Quick Links</a>
+                <div class="footer__quick-links">
+                    <a class="footer__quick-link" href="./index.html">Home</a>
+                    <a class="footer__quick-link" href="./about.html">About</a>
+                    <a class="footer__quick-link" href="#">Menu</a>
+                    <a class="footer__quick-link" href="./contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer__content-column">
+                <a class="footer__link" href="./contact.html#openingHours">Opening Hours</a>
+                <p>Wednesday - Sunday <br> 12pm - Late</p>
+                <p>Monday - Tuesday <br> Closed</p>
+            </div>
+            <div class="footer__content-column">
+                <a class="footer__link" href="./contact.html">Contact Info</a>
+                <p>Address: 135 Cuba Street, Te Aro, Wellington</p>
+                <p>Email: greasyspoon@loosiessuperette.co.nz</p>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- font awesome icons -->
+    <script src="https://kit.fontawesome.com/40be05a600.js" crossorigin="anonymous"></script>
+        <!-- custom script -->
+        <script src="./script.js"></script>
+</body>
+
+</html>
