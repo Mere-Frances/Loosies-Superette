@@ -712,6 +712,16 @@ h2 {
   flex-direction: column;
   height: 110vh;
 }
+.contact-booking-form .contact-booking-form__title {
+  font-size: 4rem;
+  font-family: Anton, sans-serif;
+  color: #BDEBFF;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #BDEBFF;
+  text-shadow: 0 0 10px #2096C9, 0 0 20px #2096C9;
+  padding-bottom: 50px;
+}
 .contact-booking-form .form-container {
   display: flex;
   justify-content: center;
@@ -1305,32 +1315,6 @@ form .submit-button {
     position: relative;
     bottom: 145px;
   }
-  .contact-access-container .contact-blue-orb {
-    height: 100px;
-    width: 100px;
-    border-radius: 100%;
-    background-color: #2096C9;
-    box-shadow: 0px 0px 214px 200px rgb(32, 150, 201);
-    -webkit-box-shadow: 0px 0px 150px 200px rgb(32, 150, 201);
-    -moz-box-shadow: 0px 0px 214px 200px rgb(32, 150, 201);
-    position: relative;
-    left: 50%;
-    top: 700px;
-    z-index: -1;
-  }
-  .contact-access-container .contact-pink-orb {
-    height: 100px;
-    width: 100px;
-    border-radius: 100%;
-    background-color: #FF38D3;
-    box-shadow: 0px 0px 214px 200px rgb(255, 56, 211);
-    -webkit-box-shadow: 0px 0px 150px 200px rgb(255, 56, 211);
-    -moz-box-shadow: 0px 0px 214px 200px rgb(255, 56, 211);
-    position: relative;
-    right: 50%;
-    top: 200px;
-    z-index: -1;
-  }
   .contact-booking-form {
     display: flex;
     justify-content: center;
@@ -1338,18 +1322,15 @@ form .submit-button {
     flex-direction: column;
     height: 170vh;
   }
-  .contact-booking-form__title {
-    z-index: 2;
-    padding-bottom: 50px;
+  .contact-booking-form .contact-booking-form__title {
     font-size: 3rem;
-    width: 80%;
-    text-align: center;
     font-family: Anton, sans-serif;
     color: #BDEBFF;
     font-weight: 100;
     text-transform: uppercase;
     color: #BDEBFF;
     text-shadow: 0 0 10px #2096C9, 0 0 20px #2096C9;
+    padding-bottom: 50px;
   }
   .contact-booking-form .form-container {
     display: flex;
@@ -1413,6 +1394,32 @@ form .submit-button {
     background-color: transparent;
     border-radius: 30px;
     cursor: pointer;
+  }
+  .contact-access-container .contact-blue-orb {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: #2096C9;
+    box-shadow: 0px 0px 214px 200px rgb(32, 150, 201);
+    -webkit-box-shadow: 0px 0px 150px 200px rgb(32, 150, 201);
+    -moz-box-shadow: 0px 0px 214px 200px rgb(32, 150, 201);
+    position: relative;
+    left: 50%;
+    top: 700px;
+    z-index: -1;
+  }
+  .contact-access-container .contact-pink-orb {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: #FF38D3;
+    box-shadow: 0px 0px 214px 200px rgb(255, 56, 211);
+    -webkit-box-shadow: 0px 0px 150px 200px rgb(255, 56, 211);
+    -moz-box-shadow: 0px 0px 214px 200px rgb(255, 56, 211);
+    position: relative;
+    right: 50%;
+    top: 200px;
+    z-index: -1;
   }
   .contact-access-container {
     display: flex;
@@ -1588,7 +1595,6 @@ form .submit-button {
     flex-direction: column;
     width: 100%;
     height: 130vh;
-    /* Adjusted height */
   }
   .quick-link-container h2 {
     font-size: 3rem;
@@ -1607,11 +1613,8 @@ form .submit-button {
     align-items: center;
     justify-content: center;
     width: 90%;
-    /* Adjusted width */
     height: 90vh;
-    /* Adjusted height */
     gap: 20px;
-    /* Adjusted gap */
   }
   .quick-link-container .quick-link-container__card-container .quick-link-card {
     width: 92%;
@@ -1624,32 +1627,25 @@ form .submit-button {
   }
   .quick-link-card__title {
     font-size: 1.5rem;
-    /* Adjusted font size */
     padding-bottom: 10px;
-    /* Adjusted padding */
   }
   p {
     font-size: 1rem;
-    /* Adjusted font size */
     padding-bottom: 10px;
-    /* Adjusted padding */
   }
   .btn {
     width: 100px;
     height: 50px;
     border: 3px solid #2096C9;
     border-radius: 20px;
-    /* Adjusted border-radius */
     background-color: transparent;
     color: white;
     font-size: 1.2rem;
-    /* Adjusted font size */
   }
   .quick-link-card--1,
   .quick-link-card--2,
   .quick-link-card--3 {
     height: 40vh;
-    /* Adjusted height */
   }
   .about-container {
     display: flex;
@@ -1689,6 +1685,10 @@ form .submit-button {
     color: #BDEBFF;
     width: 100%;
     padding-bottom: 30px;
+    padding-top: 0;
+  }
+  .our-food-container .our-food-content .food-content-text p {
+    padding-top: 0px;
   }
   .about-container .about-container__content .about-container__img {
     width: 80%;
@@ -1698,7 +1698,6 @@ form .submit-button {
   .services-card--2,
   .services-card--3 {
     height: 200px;
-    /* Adjusted height */
   }
   .instagram-container {
     display: flex;
@@ -1738,7 +1737,7 @@ form .submit-button {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: auto;
+    height: 50vh;
     padding-top: 100px;
     margin: 0;
   }
@@ -1809,8 +1808,6 @@ form .submit-button {
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* justify-content: center; */
-    /* width: 90%; */
     text-align: center;
     background-color: rgba(37, 37, 37, 0.5);
     height: 100vh;
@@ -1833,7 +1830,7 @@ form .submit-button {
     width: 100%;
   }
   .our-beverages-container {
-    height: 115vh;
+    height: 130vh;
   }
   .our-beverages-container h2 {
     font-size: 3rem;
@@ -1854,7 +1851,7 @@ form .submit-button {
     /* width: 90%; */
     text-align: center;
     background-color: rgba(37, 37, 37, 0.5);
-    height: 95vh;
+    height: 115vh;
     /* padding: 40px; */
     border-radius: 30px;
   }
@@ -1879,7 +1876,7 @@ form .submit-button {
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    height: 140vh;
+    height: 160vh;
     overflow: hidden;
   }
   .functions-container .functions-content {
@@ -1890,7 +1887,7 @@ form .submit-button {
     /* width: 90%; */
     text-align: center;
     background-color: rgba(37, 37, 37, 0.5);
-    height: 100vh;
+    height: 110vh;
     /* padding: 40px; */
     border-radius: 30px;
   }
@@ -1946,7 +1943,7 @@ form .submit-button {
     justify-content: center;
     width: 90%;
     color: white;
-    height: 90vh;
+    height: 115vh;
     line-height: 3rem;
     padding-top: 50vh;
   }
@@ -1991,7 +1988,7 @@ form .submit-button {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 170vh;
+    height: 180vh;
   }
   .contact-booking-form__title {
     z-index: 2;
@@ -2113,7 +2110,7 @@ form .submit-button {
     text-align: center;
     font-size: 1.5rem;
     color: #BDEBFF;
-    line-height: 3.4rem;
+    line-height: 2.5rem;
   }
   .contact-access-container .contact-blue-orb {
     height: 100px;

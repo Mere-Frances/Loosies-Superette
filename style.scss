@@ -209,8 +209,7 @@ h2 {
         padding-bottom: 50px;
     }
 
-
-
+// QUICK LINK CARDS
     .quick-link-container__card-container {
         display: flex;
         flex-direction: row;
@@ -290,8 +289,6 @@ h2 {
         }
     }
 }
-
-
 // HOME QUICK LINKS END
 
 // HOME ABOUT US START
@@ -361,11 +358,9 @@ h2 {
     }
 
 }
-
 // HOME ABOUT US END
 
 // HOME SERVICES CARDS START
-
 .services-card--1 {
     background-color: black;
     background-image: url(./images/about\ us\ 1.jpg);
@@ -398,7 +393,6 @@ h2 {
     @include pink-box-glow;
 
 }
-
 // HOME SERVICES CARDS END
 
 // HOME PAGE ORBS
@@ -539,7 +533,6 @@ h2 {
         transition: $primary-transition;
     }
 }
-
 // INSTAGRAM GRID END
 
 
@@ -547,7 +540,7 @@ h2 {
 
 // ABOUT US PAGE
 
-
+// ABOUT PAGE ORBS
 .about-blue-orb {
     @include blue-orb;
     position: relative;
@@ -583,11 +576,7 @@ h2 {
         width: 80%;
     }
 }
-
 // ABOUT US HEADER END
-
-
-
 
 // ABOUT TESTIMONIAL START
 .about-testimonial {
@@ -612,7 +601,6 @@ h2 {
         }
     }
 }
-
 // ABOUT TESTIMONIAL END
 
 // OUR FOOD SECTIONS START
@@ -637,8 +625,9 @@ h2 {
         }
     }
 }
+// OUR FOOD SECTION END
 
-// OUR FOOD GRID
+// OUR FOOD GRID START
 .our-food-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -688,9 +677,8 @@ h2 {
     background-size: cover;
     border-radius: $border-radius;
 }
-
+// OUR FOOD GRID END
 // OUR FOOD SECTIONS END
-
 
 
 // OUR BEVERAGES SECTION START
@@ -747,9 +735,7 @@ h2 {
     background-size: cover;
     border-radius: $border-radius;
 }
-
 // OUR BEVERAGES SECTION END
-
 
 
 // OUR FUNCTIONS SECTION START
@@ -821,7 +807,6 @@ h2 {
     background-size: cover;
     border-radius: $border-radius;
 }
-
 // OUR FUNCTIONS SECTION END
 
 
@@ -829,6 +814,7 @@ h2 {
 
 // CONTACT
 
+// CONTACT HEADER START
 .contact-header {
     display: flex;
     align-items: center;
@@ -878,14 +864,27 @@ h2 {
         }
     }
 }
+// CONTACT HEADER END
 
+// CONTACT BOOKING FORM START
 .contact-booking-form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 110vh;
+    .contact-booking-form__title{
+    font-size: 4rem;
+    font-family: Anton, sans-serif;
+    color: #BDEBFF;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #BDEBFF;
+    text-shadow: 0 0 10px #2096C9, 0 0 20px #2096C9;
+    padding-bottom: 50px;
+    }
 
+    // FORM SECTION
     .form-container {
         display: flex;
         justify-content: center;
@@ -968,41 +967,9 @@ form .submit-button {
 .submit-button:focus {
     background-color: rgb(121, 230, 121);
 }
+// BOOKING FORM END
 
-
-
-
-
-// form input {
-//     margin-bottom: 1rem;
-//     border: 1px solid rgb(71, 71, 71);
-//     border-radius: 1rem;
-//     padding: 10px;
-// }
-
-// form input:focus,
-// form input:active {
-//     background-color: rgb(218, 17, 17);
-//     transition: 500ms;
-// }
-
-// .submit-button {
-//     border-radius: 2rem;
-//     height: 3rem;
-// }
-
-// .submit-button:hover {
-//     background-color: rgb(178, 178, 178);
-//     transition: 500ms;
-//     cursor: pointer;
-// }
-
-// .submit-button:focus {
-//     background-color: rgb(121, 230, 121);
-// }
-
-
-
+// CONTACT MAP AND HOURS SECTION
 .contact-access-container {
     display: flex;
     align-items: center;
@@ -1010,6 +977,8 @@ form .submit-button {
     height: 70vh;
     padding: 0 10% 0 10%;
 
+
+    // BLUE BACKGROUND ORB
     .contact-blue-orb {
         @include blue-orb;
         position: relative;
@@ -1017,6 +986,7 @@ form .submit-button {
         z-index: -1;
     }
 
+    // PINK BACKGROUND ORB
     .contact-pink-orb {
         @include pink-orb;
         position: relative;
@@ -1025,6 +995,7 @@ form .submit-button {
         z-index: -1;
     }
 
+    // MAP
     .map-details {
         display: flex;
         flex-direction: column;
@@ -1044,6 +1015,7 @@ form .submit-button {
         }
     }
 
+    // OPENING HOURS
     .opening-hours {
         display: flex;
         flex-direction: column;
@@ -1073,6 +1045,8 @@ form .submit-button {
         }
     }
 }
+// CONTACT MAP AND HOURS END
+// CONTACT PAGE END
 
 
 // FOOTER START
@@ -1095,6 +1069,7 @@ form .submit-button {
         }
     }
 
+    // FOOTER DETAILS
     .footer__links {
         display: flex;
         flex-direction: row;
@@ -1142,14 +1117,19 @@ form .submit-button {
 
 
 }
-
+// FOOTER DETAILS END
 // FOOTER END
 
 
-// TABLET
+// ---------------------------------------------------------
+// ---------------------------------------------------------
+
+
+// TABLET RESPONSIVE STYLING START
 
 @media screen and (max-width: 768px) {
 
+    // NAV START
     .nav-container .navbar {
         display: flex;
         justify-content: space-between;
@@ -1201,7 +1181,11 @@ form .submit-button {
         gap: 5vh;
         z-index: -1;
     }
+    // NAV END
 
+
+    // HOME PAGE
+    // HOME HEADER START
     .header-container {
         display: flex;
         justify-content: center;
@@ -1214,7 +1198,9 @@ form .submit-button {
     .header-container img {
         width: 87%;
     }
+    // HOME HEADER END
 
+    // QUICK LINKS START
     .quick-link-container {
         display: flex;
         justify-content: center;
@@ -1247,7 +1233,9 @@ form .submit-button {
         padding-bottom: 20px;
         text-decoration: none;
     }
+    // QUICK LINK END
 
+    // HOME ABOUT SECTION START
     .about-container {
         display: flex;
         align-items: center;
@@ -1283,7 +1271,9 @@ form .submit-button {
         width: 70%;
         border-radius: 30px;
     }
+    // HOME ABOUT SECTION END
 
+    // INSTAGRAM SECTION START
     .instagram-container {
         display: flex;
         flex-direction: column;
@@ -1304,9 +1294,13 @@ form .submit-button {
         height: 100%;
         padding: 2%;
     }
+    // INSTAGRAM SECTION END
+
+
 
     // ABOUT US PAGE
-    // ABOUT US HEADER
+
+    // ABOUT US HEADER START
     .header-container {
         display: flex;
         justify-content: center;
@@ -1319,8 +1313,9 @@ form .submit-button {
     .about-header {
         margin: 0;
     }
+    // ABOUT US HEADER END
 
-    // OUR STORY
+    // OUR STORY START
     .our-story {
         display: flex;
         align-items: center;
@@ -1343,8 +1338,9 @@ form .submit-button {
         padding: 37px;
         border-radius: 30px;
     }
+    // OUR STORY END
 
-    // TESTIMONIAL
+    // TESTIMONIAL START
     .about-testimonial {
         display: flex;
         justify-content: center;
@@ -1366,9 +1362,10 @@ form .submit-button {
     .about-testimonial p .testimonial-sub-text {
         font-size: 1rem;
     }
+    // TESTIMONIAL END
 
 
-    // OUR FOOD
+    // OUR FOOD START
     .our-food-container {
         display: flex;
         align-items: center;
@@ -1419,8 +1416,9 @@ form .submit-button {
         padding-bottom: 29px;
         padding-top: 53px;
     }
+    // OUR FOOD END
 
-    // OUR BEVERAGS
+    // OUR BEVERAGS START
     .our-beverages-container {
         display: flex;
         align-items: center;
@@ -1471,8 +1469,9 @@ form .submit-button {
         width: 100%;
         height: 50vh;
     }
+    // OUR BEVERAGES END
 
-    // FUNCTIONS AND MORE
+    // FUNCTIONS AND MORE START
     .functions-container {
         display: flex;
         align-items: center;
@@ -1515,6 +1514,7 @@ form .submit-button {
         padding: 50px 50px 20px 50px;
     }
 
+// BLUE ORB
     .about-blue-orb {
         height: 100px;
         width: 100px;
@@ -1528,10 +1528,13 @@ form .submit-button {
         top: -295px;
         z-index: -1;
     }
+    // FUNCTIONS AND MORE END
+
 
 
     // CONTACT US PAGE
     
+    // CONTACT HEADER START
     .contact-header {
         display: flex;
         align-items: center;
@@ -1564,6 +1567,7 @@ form .submit-button {
         padding-bottom: 75px;
     }
 
+    // DEATILS
     .contact-header .contact-details-container .contact-details {
         display: flex;
         flex-direction: column;
@@ -1577,6 +1581,7 @@ form .submit-button {
     padding-bottom: 1rem;
 }
 
+// ICONS AND TEXT
     .contact-header .contact-details-container p,
     .contact-header .contact-details-container a {
         font-size: 2rem;
@@ -1595,37 +1600,9 @@ form .submit-button {
         position: relative;
         bottom: 145px;
     }
-    
-    .contact-access-container .contact-blue-orb {
-        height: 100px;
-        width: 100px;
-        border-radius: 100%;
-        background-color: #2096C9;
-        box-shadow: 0px 0px 214px 200px rgb(32, 150, 201);
-        -webkit-box-shadow: 0px 0px 150px 200px rgb(32, 150, 201);
-        -moz-box-shadow: 0px 0px 214px 200px rgb(32, 150, 201);
-        position: relative;
-        left: 50%;
-        top: 700px;
-        z-index: -1;
-    }
+    // CONTACT HEADER END
 
-    .contact-access-container .contact-pink-orb {
-        height: 100px;
-        width: 100px;
-        border-radius: 100%;
-        background-color: #FF38D3;
-        box-shadow: 0px 0px 214px 200px rgb(255, 56, 211);
-        -webkit-box-shadow: 0px 0px 150px 200px rgb(255, 56, 211);
-        -moz-box-shadow: 0px 0px 214px 200px rgb(255, 56, 211);
-        position: relative;
-        right: 50%;
-        top: 200px;
-        z-index: -1;
-    }
-
-    // MOBILE CONTACT BOOKING FORM
-
+    // CONTACT BOOKING FORM START
     .contact-booking-form {
         display: flex;
         justify-content: center;
@@ -1634,18 +1611,15 @@ form .submit-button {
         height: 170vh;
     }
 
-    .contact-booking-form__title {
-        z-index: 2;
-        padding-bottom: 50px;
+    .contact-booking-form .contact-booking-form__title {
         font-size: 3rem;
-        width: 80%;
-        text-align: center;
         font-family: Anton, sans-serif;
         color: #BDEBFF;
         font-weight: 100;
         text-transform: uppercase;
         color: #BDEBFF;
         text-shadow: 0 0 10px #2096C9, 0 0 20px #2096C9;
+        padding-bottom: 50px;
     }
 
     .contact-booking-form .form-container {
@@ -1717,9 +1691,38 @@ form .submit-button {
         border-radius: 30px;
         cursor: pointer;
     }
+    // CONTACT BOOKING FORM END
 
+    // CONTACT MAP AND HOURS START
+    // ORBS
+    .contact-access-container .contact-blue-orb {
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+        background-color: #2096C9;
+        box-shadow: 0px 0px 214px 200px rgb(32, 150, 201);
+        -webkit-box-shadow: 0px 0px 150px 200px rgb(32, 150, 201);
+        -moz-box-shadow: 0px 0px 214px 200px rgb(32, 150, 201);
+        position: relative;
+        left: 50%;
+        top: 700px;
+        z-index: -1;
+    }
 
-    // MOBILE CONTACT MAP AND HOURS
+    .contact-access-container .contact-pink-orb {
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+        background-color: #FF38D3;
+        box-shadow: 0px 0px 214px 200px rgb(255, 56, 211);
+        -webkit-box-shadow: 0px 0px 150px 200px rgb(255, 56, 211);
+        -moz-box-shadow: 0px 0px 214px 200px rgb(255, 56, 211);
+        position: relative;
+        right: 50%;
+        top: 200px;
+        z-index: -1;
+    }
+
     .contact-access-container {
         display: flex;
         align-items: center;
@@ -1729,6 +1732,7 @@ form .submit-button {
         padding: 0 10% 0 10%;
     }
 
+    // MAP
     .contact-access-container .map-details {
         display: flex;
         flex-direction: column;
@@ -1743,6 +1747,7 @@ form .submit-button {
         width: 552px;
     }
 
+    // OPENING HOURS
     .contact-access-container .opening-hours {
         display: flex;
         flex-direction: column;
@@ -1772,11 +1777,10 @@ form .submit-button {
         color: #BDEBFF;
         line-height: 3.4rem;
     }
-
+    // CONTACT MAP & HOURS END
 
 
     // FOOTER
-
     .footer {
         display: flex;
         flex-direction: column;
@@ -1827,16 +1831,16 @@ form .submit-button {
         gap: 20px;
         font-size: 1.2rem;
     }
-
+    // FOOTER END
 }
+// TABLET RESPONSIVE STYLING END
 
 
+// ---------------------------------------------------------
+// ---------------------------------------------------------
 
 
-
-
-
-// MOBILE
+// MOBILE RESPONSIVE STYLING START
 
 @media only screen and (max-width: 425px) {
 
@@ -1907,8 +1911,6 @@ form .submit-button {
         -moz-box-shadow: 0px 0px 200px 70px rgba(32, 150, 201, 0.75);
         border: 2px solid #BDEBFF;
     }
-
-
     // NAV END
 
     // HOME HEADER START
@@ -1926,8 +1928,6 @@ form .submit-button {
             width: 89%;
         }
     }
-
-
     // HOME HEADER END
 
     // HOME QUICK LINKS START
@@ -1938,7 +1938,6 @@ form .submit-button {
         flex-direction: column;
         width: 100%;
         height: 130vh;
-        /* Adjusted height */
     }
 
     .quick-link-container h2 {
@@ -1959,11 +1958,8 @@ form .submit-button {
         align-items: center;
         justify-content: center;
         width: 90%;
-        /* Adjusted width */
         height: 90vh;
-        /* Adjusted height */
         gap: 20px;
-        /* Adjusted gap */
     }
 
     .quick-link-container .quick-link-container__card-container .quick-link-card {
@@ -1978,16 +1974,13 @@ form .submit-button {
 
     .quick-link-card__title {
         font-size: 1.5rem;
-        /* Adjusted font size */
         padding-bottom: 10px;
-        /* Adjusted padding */
     }
 
     p {
         font-size: 1rem;
-        /* Adjusted font size */
         padding-bottom: 10px;
-        /* Adjusted padding */
+
     }
 
     .btn {
@@ -1995,20 +1988,16 @@ form .submit-button {
         height: 50px;
         border: 3px solid $blue;
         border-radius: 20px;
-        /* Adjusted border-radius */
         background-color: transparent;
         color: white;
         font-size: 1.2rem;
-        /* Adjusted font size */
     }
 
     .quick-link-card--1,
     .quick-link-card--2,
     .quick-link-card--3 {
         height: 40vh;
-        /* Adjusted height */
     }
-
     // HOME QUICK LINKS END
 
     // HOME ABOUT US START
@@ -2054,27 +2043,27 @@ form .submit-button {
         color: #BDEBFF;
         width: 100%;
         padding-bottom: 30px;
+        padding-top:0;
+    }
+    .our-food-container .our-food-content .food-content-text p {
+        padding-top: 0px;
     }
 
     .about-container .about-container__content .about-container__img {
         width: 80%;
         margin-top: 30px;
     }
-
     // HOME ABOUT US END
 
     // HOME SERVICES CARDS START
-
     .services-card--1,
     .services-card--2,
     .services-card--3 {
         height: 200px;
-        /* Adjusted height */
     }
-
     // HOME SERVICES CARDS END
 
-    // INSTAGRAM SECTION
+    // INSTAGRAM SECTION START
     .instagram-container {
         display: flex;
         flex-direction: column;
@@ -2111,19 +2100,24 @@ form .submit-button {
         height: 90%;
         padding: 5%;
     }
+    // INSTAGRAM SECTION END
+    // HOME PAGE END
 
 
-    // MOBILE ABOUT US PAGE
+    // ABOUT US PAGE START
+    // ABOUT US HEADER START
     .header-container {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: auto;
+        height: 50vh;
         padding-top: 100px;
         margin: 0
     }
+    // BAOUT US HEADER END
 
+// OUR STORY START
     .our-story {
         display: flex;
         align-items: center;
@@ -2134,6 +2128,7 @@ form .submit-button {
         overflow: hidden;
     }
 
+    // ORBS
     .our-story .about-pink-orb {
         height: 100px;
         width: 100px;
@@ -2161,7 +2156,9 @@ form .submit-button {
         top: 300px;
         z-index: -1;
     }
+    // OUR STORY END
 
+    // TESTIMONIAL START
     .about-testimonial {
         display: flex;
         justify-content: center;
@@ -2183,8 +2180,9 @@ form .submit-button {
     .about-testimonial p .testimonial-sub-text {
         font-size: 1rem;
     }
+    // TESTIMONIAL END
 
-    // OUR FOOD
+    // OUR FOOD START
     .our-food-container {
         display: flex;
         align-items: center;
@@ -2199,8 +2197,6 @@ form .submit-button {
         display: flex;
         align-items: center;
         flex-direction: column;
-        /* justify-content: center; */
-        /* width: 90%; */
         text-align: center;
         background-color: rgba(37, 37, 37, 0.5);
         height: 100vh;
@@ -2224,11 +2220,11 @@ form .submit-button {
         justify-content: center;
         width: 100%;
     }
+    // OUR FOOD END
 
-    // OUR BEVERAGES
-
+    // OUR BEVERAGES START
     .our-beverages-container {
-        height: 115vh;
+        height: 130vh;
     }
 
     .our-beverages-container h2 {
@@ -2251,7 +2247,7 @@ form .submit-button {
         /* width: 90%; */
         text-align: center;
         background-color: rgba(37, 37, 37, 0.5);
-        height: 95vh;
+        height: 115vh;
         /* padding: 40px; */
         border-radius: 30px;
     }
@@ -2272,15 +2268,16 @@ form .submit-button {
         width: 100%;
         height: 21vh;
     }
+    // OUR BEVERAGES END
 
-    // FUNCTIONS AND MORE
+    // FUNCTIONS AND MORE START
     .functions-container {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         width: 100%;
-        height: 140vh;
+        height: 160vh;
         overflow: hidden;
     }
 
@@ -2292,7 +2289,7 @@ form .submit-button {
         /* width: 90%; */
         text-align: center;
         background-color: rgba(37, 37, 37, 0.5);
-        height: 100vh;
+        height: 110vh;
         /* padding: 40px; */
         border-radius: 30px;
     }
@@ -2338,13 +2335,15 @@ form .submit-button {
         font-weight: 100;
         padding-bottom: 20px;
     }
+    // FUNCTIONS & MORE END
+    // ABOT US PAGE END
 
 
 
 
-    // MOBILE CONTACT
+    // MOBILE CONTACT START
+
     // MOBILE CONTACT HEADER
-
     .contact-header {
         display: flex;
         align-items: center;
@@ -2361,7 +2360,7 @@ form .submit-button {
         justify-content: center;
         width: 90%;
         color: white;
-        height: 90vh;
+        height: 115vh;
         line-height: 3rem;
         padding-top: 50vh;
     }
@@ -2389,6 +2388,7 @@ form .submit-button {
         padding-top: 3rem;
     }
 
+    // CONTACT ICONS AND TEXT
     .contact-header .contact-details-container p,
     .contact-header .contact-details-container a {
         font-size: 1.3rem;
@@ -2407,15 +2407,15 @@ form .submit-button {
         position: relative;
         bottom: 250px;
     }
+    // CONTACT HEADER END
 
-    // MOBILE CONTACT BOOKING FORM
-
+    // CONTACT BOOKING FORM START
     .contact-booking-form {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        height: 170vh;
+        height: 180vh;
     }
 
     .contact-booking-form__title {
@@ -2501,9 +2501,10 @@ form .submit-button {
         border-radius: 30px;
         cursor: pointer;
     }
+    // BOOKING FORM END
 
 
-    // MOBILE CONTACT MAP AND HOURS
+    // CONTACT MAP AND HOURS START
     .contact-access-container {
         display: flex;
         align-items: center;
@@ -2513,6 +2514,7 @@ form .submit-button {
         padding: 0 10% 0 10%;
     }
 
+    // MAP
     .contact-access-container .map-details {
         display: flex;
         flex-direction: column;
@@ -2527,6 +2529,7 @@ form .submit-button {
         height: 300px;
     }
 
+    // OPENING HOURS
     .contact-access-container .opening-hours {
         display: flex;
         flex-direction: column;
@@ -2554,7 +2557,7 @@ form .submit-button {
         text-align: center;
         font-size: 1.5rem;
         color: #BDEBFF;
-        line-height: 3.4rem;
+        line-height: 2.5rem;
     }
 
     // MOBILE CONTACT ORBS
@@ -2584,9 +2587,12 @@ form .submit-button {
         top: 788px;
         z-index: -1;
     }
+    // CONTACT MAP AND HOURS END
+    // CONTACT PAGE END
 
-    // FOOTER
 
+
+    // FOOTER START
     .footer {
         display: flex;
         flex-direction: column;
@@ -2682,5 +2688,6 @@ form .submit-button {
         font-size: 1.2rem;
         flex-wrap: wrap;
     }
-
+    // FOOTER END
 }
+// MOBILE RESPONSIVE STYLING END
